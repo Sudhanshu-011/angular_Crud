@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./register.component.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-container">
+        <input class="input-area name" type="text" placeholder="name" [(ngModel)]="registerData.name">
+        <input class="input-area city" type="text" placeholder="city" [(ngModel)]="registerData.city">
+        <input class="input-area email" type="email" placeholder="email" [(ngModel)]="registerData.email">
+        <input class="input-area password" type="text" placeholder="password" [(ngModel)]="registerData.password">
+        <div class="buttons">
+            <button class="btn register-btn" (click)="registerUser()">Register</button>
+            <button class="btn login-btn" (click)="loginPage()">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

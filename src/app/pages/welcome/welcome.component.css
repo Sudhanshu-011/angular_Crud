@@ -1,0 +1,48 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.btn {
+    height: 20px;
+    padding: 5px 20px 20px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 36%;
+    color: #f5fbf1;
+}
+
+.update-btn {
+    border: 1px solid #11be11;
+    background-color: #11be11;
+}
+
+.delete-btn {
+    border: 1px solid #f44949;
+    background-color: #f44949;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+.logout-btn {
+    border: 1px solid #3737e3;
+    background-color: #3737e3;
+    width: 100px;
+    margin-top: 50px;
+}

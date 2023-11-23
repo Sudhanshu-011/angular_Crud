@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./login.component.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-login">
+
+        <input class="email input-area" type="email" placeholder="email" [(ngModel)] = "userData.email">
+        <input class="password input-area" type="text" placeholder="password" [(ngModel)] = "userData.password">
+        <div class="buttons">
+            <button class="btn login-btn" (click)="formSubmit()">Login</button>
+            <button class="btn register-btn" (click)="registerPage()">SignUp</button>
+        </div>
+    </div>
+</body>
+</html>
